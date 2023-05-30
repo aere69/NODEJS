@@ -23,6 +23,6 @@ console.log(addOne(2));
 const addsOne = a => a+1;
 console.log(addsOne(2));
 
-//Function with no parameters requires the parenthesis.
+//Function with no parameters requires the parenthesis on the definiton and method call.
 const addRandom = () => 1+2;
 console.log(addRandom());
