@@ -1,0 +1,19 @@
+{
+  "name": "04-express-sample",
+  "version": "1.0.0",
+  "description": "Sample Node JS project with Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "start-server": "node app.js"
+  },
+  "author": "Andres Ernesto Rojas Escobar",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
