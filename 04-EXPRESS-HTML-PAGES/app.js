@@ -13,6 +13,8 @@ const shopRoutes = require('./routes/shop');
 // Third party required : npm install --save body-parser
 // Parsing of the body should be done no matter where the request ends up.
 app.use(bodyParser.urlencoded({extended: false}));
+// Serve files statically. Form the filesystem. Grant Read access.
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/admin', adminRoutes);
 app.use(shopRoutes);

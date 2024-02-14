@@ -1,12 +1,14 @@
 const path = require('path'); // core module
 
+const rootDir = require('../helpers/rootPath');
+
 const express = require('express');
 const router = express.Router();
 
 // /admin/add-product => GET
 router.get('/add-product', (req, res, next) => {
     console.log('In Add Product');
-    res.sendFile(path.join(__dirname, '../', 'views', 'add-product.html')); //create path valid for different OSs
+    res.sendFile(path.join(rootDir, 'views', 'add-product.html')); //create path valid for different OSs
 });
 
 // /admin/add-product => POST
